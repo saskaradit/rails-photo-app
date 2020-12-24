@@ -1,0 +1,14 @@
+<%= form_for(:payment) do |p|%>
+    <div class="form-group">
+      <%= p.label :card_number, "Card Number", data:{stripe:'label'}%>
+      <%= p.text_field :card_number, class: "form-control", required: true, data:{stripe:"number"}%>
+    </div>
+    <div class="form-group">
+      <%= p.label :card_cvv, "Card CVV", data:{stripe:'label'}%>
+      <%= p.select :card_cvv, class: "form-control", required: true, data:{stripe:"cvv"}%>
+    </div>
+    <div class="form-group">
+      <%= p.label :card_expires, "Card Expires", data:{stripe:'label'}%>
+      <%= p.text_field :card_expires_month, class: "form-control", required: true, data:{stripe:"cvv"}%>
+    </div>
+  <% end %>

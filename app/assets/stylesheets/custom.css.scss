@@ -1,1 +1,35 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+body{
+  background-color: black !important;
+}
+h1,h2,h3,h4,h5,h6,p,label{
+  color: white !important;
+}
+a{color: orange;}
+a:hover{color: orange;filter: brightness(1.4) ;text-decoration: none;}
+.navbar{
+  margin-bottom: 2rem;
+  background-color: black !important;
+}
+.nav-link, .nav-item, .navbar-brand{
+  color: white !important;
+}
+.navbar-brand:hover{color: orange !important; filter: brightness(1);}
+
+.jumbotron {
+  background-image: asset-url('Rad-1.jpg');
+  filter: brightness(0.9);
+  background-size: cover ;
+  background-position: center center;
+  color: #fff;
+  // box-shadow: 4px 4px 12px rgba($color: white, $alpha: 0.2);
+}
+.btn-primary{
+  background-color: orange;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: orange;
+  filter: brightness(0.8);
+}
